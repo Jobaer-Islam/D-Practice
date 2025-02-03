@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3ff1b0;
+            margin: 0;
+            padding: 20px;
+            color: #589E87;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #2F404E;
+            border-radius: 4px;
+        }
+
+        label {
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .button {
+            background-color: #2F404E;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 60px;
+        }
+
+        .header {
+            background-color: #2F404E;
+            color: white;
+            text-align: center;
+            height: 100px;
+            padding: 10px 0 20px 0;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        select {
+            color: #589E87;
+        }
+
+        .stu-nam-uni {
+            display: flex;
+            text-align: center;
+            background-color: #2bc78e;
+            padding: 10px;
+            color: #2F404E;
+            margin: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Student Details</h2>
+            <p>Enter the details of all incoming students.</p>
+        </div>
+        <form>
+            <div class="stu-nam-uni">
+                <div>
+                    <label for="client-name">Student Name</label>
+                    <input type="text" id="client-name" required>
+                </div>
+
+                <div>
+                    <label for="company">University Name:</label>
+                    <input type="text" id="company" required>
+                </div>
+            </div>
+
+            <div class="stu-nam-uni">
+                <label for="department">Department * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select id="department" required>
+                    <option value="">CSE</option>
+                    <option value="sales">EEE</option>
+                    <option value="marketing">BBA</option>
+                    <option value="marketing">Mechanical</option>
+                </select>
+            </div>
+            <div class="stu-nam-uni">
+                <label>Preferred Contact Method * &nbsp;&nbsp;&nbsp; </label>
+                <input type="radio" name="contact" value="email" id="email"><label for="email">Email</label>
+                <input type="radio" name="contact" value="phone" id="phone"><label for="phone">Phone</label>
+
+            </div>
+
+            <div class="stu-nam-uni">
+                <div>
+                    <label for="email-input">Give Email</label>
+                    <input type="email" id="email-input">
+                </div>
+                <div>
+                    <label for="phone-input">Phone Number</label>
+                    <input type="tel" id="phone-input">
+                </div>
+            </div>
+
+            <div class="stu-nam-uni">
+                <div>
+                    <label for="website">Portfolio Link *</label>
+                    <input type="text" id="website" required>
+                </div>
+                <div>
+                    <label for="hours">Study Hours *</label>
+                    <input type="text" id="hours" required>
+                </div>
+            </div>
+            <div class="stu-nam-uni">
+                <label for="cycle">Birth Date : &nbsp;&nbsp;&nbsp; *</label>
+                <input type="date" id="cycle" required>
+            </div>
+
+            <div class="stu-nam-uni">
+                <label for="info">Additional Information</label>
+            <textarea id="info" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
