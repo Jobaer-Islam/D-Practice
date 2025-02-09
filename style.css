@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Box Styling */
+
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Unique Styles */
+.shadow {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rounded {
+    border-radius: 15px;
+    background-color: #ffebcd;
+}
+
+.gradient {
+    background: linear-gradient(45deg, #ff7eb3, #ff758c);
+    color: white;
+}
+
+.border {
+    border: 2px solid #333;
+    border-style: dashed;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.transform {
+    transform: rotate(5deg);
+}
+
+.transition {
+    transition: all 0.5s ease;
+}
+
+.animation {
+    animation: bounce 1s infinite alternate;
+}
+
+.flexbox {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    background: #fff0f5;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.background-image {
+    background-image: url("your-image.jpg");
+    background-size: cover;
+}
+
+.letter-spacing {
+    letter-spacing: 3px;
+}
+
+.word-spacing {
+    word-spacing: 5px;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.z-index {
+    position: relative;
+    z-index: 10;
+}
+
+.visibility {
+    visibility: visible;
+}
+
+.clip-path {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.filter {
+    filter: blur(1px);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
