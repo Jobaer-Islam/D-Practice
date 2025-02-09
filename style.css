@@ -107,11 +107,11 @@ header {
 }
 
 .letter-spacing {
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .word-spacing {
-    word-spacing: 5px;
+    word-spacing: 8px;
 }
 
 .line-height {
@@ -128,7 +128,7 @@ header {
 }
 
 .clip-path {
-    clip-path: circle(50% at 50% 50%);
+    clip-path: circle(60% at 50% 50%);
 }
 
 .filter {
@@ -146,6 +146,6 @@ header {
     }
 
     to {
-        transform: translateY(-10px);
+        transform: translateY(10px);
     }
 }
