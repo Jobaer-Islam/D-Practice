@@ -1,16 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #3ff1b0;
     margin: 0;
     padding: 0;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background-color: #4caf50;
+    background-color: #2F404E;
+    border: 4px dashed #10e1b4;
+
     color: white;
     text-align: center;
-
     padding: 20px 0;
     font-size: 24px;
     font-weight: bold;
@@ -18,16 +19,16 @@ header {
 
 /* Main Container */
 .container {
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     display: flex;
     justify-content: center;
+    
 }
 
-/* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -35,9 +36,10 @@ header {
 /* Box Styling */
 
 .box {
-    background-color: white;
+    background-color: #2F404E;
+    color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 24px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -55,16 +57,17 @@ header {
 
 .rounded {
     border-radius: 15px;
-    background-color: #ffebcd;
+    background-color: #14c8a1;
+    color: black;
 }
 
 .gradient {
-    background: linear-gradient(45deg, #ff7eb3, #ff758c);
-    color: white;
+    background: linear-gradient(45deg, #3cdf8b, #5eebeb);
+    color: rgb(0, 0, 0);
 }
 
 .border {
-    border: 2px solid #333;
+    border: 2px solid #10e1b4;
     border-style: dashed;
 }
 
@@ -92,7 +95,8 @@ header {
 }
 
 .grid {
-    background: #fff0f5;
+    background: #028a88;
+    border-radius: 8px;
 }
 
 .text-shadow {
