@@ -33,8 +33,6 @@ header {
     padding: 20px;
 }
 
-/* Box Styling */
-
 .box {
     background-color: #2F404E;
     color: white;
@@ -50,9 +48,8 @@ header {
     box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Unique Styles */
 .shadow {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(254, 255, 255, 0.3);
 }
 
 .rounded {
@@ -72,7 +69,7 @@ header {
 }
 
 .opacity {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .transform {
@@ -100,11 +97,12 @@ header {
 }
 
 .text-shadow {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
+    color: rgb(9, 165, 147);
 }
 
 .background-image {
-    background-image: url("your-image.jpg");
+    background-image: url("uu logo.webp");
     background-size: cover;
 }
 
