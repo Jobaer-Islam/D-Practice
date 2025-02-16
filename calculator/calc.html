@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Simple Calculator</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    <h1>Simple Calculator</h1>
-    <input type="text" id="number1" placeholder="Number 1"><br><br>
-    <input type="text" id="number2" placeholder="Number 2"><br><br>
 
-    <button onclick="calculate('+')">Add</button>
-    <button onclick="calculate('-')">Subtract</button>
-    <button onclick="calculate('*')">Multiply</button>
-    <button onclick="calculate('/')">Divide</button><br><br>
+<body class="w-xl mx-auto">
+    <h1 class="text-5xl my-8 font-bold">Simple Calculator</h1>
+    <div class="flex ">
+        <p class="text-xl px-2">Number-1 : </p>
+        <input type="text" id="number1" class="border border-4"><br><br>
+    </div>
+    <div class="flex my-4">
+        <p class="text-xl px-2">Number-2 : </p>
+        <input type="text" id="number2" class="border border-4"><br><br>
+    </div>
+    <div class="flex">
+        <p class="text-xl px-2">Operations : </p>
+        <div>
+            <button class="border border-4 px-4" onclick="calculate('+')">+</button>
+            <button class="border border-4 px-4" onclick="calculate('-')">-</button>
+            <button class="border border-4 px-4" onclick="calculate('*')">x</button>
+            <button class="border border-4 px-4" onclick="calculate('/')">/</button>
+        </div>
+    </div>
 
-    <input type="text" id="result" placeholder="Result" readonly><br>
-    
+    <div class="flex mt-2 ">
+        <p class="text-xl px-2">Result  : &nbsp;&nbsp;&nbsp;&nbsp; </p>
+        <input class="border border-4 " type="text" id="result" placeholder="Result" readonly><br>
+
+    </div>
     <script>
         function calculate(operation) {
             var num1 = document.getElementById('number1').value;
@@ -25,7 +42,7 @@
             num2 = parseFloat(num2);
 
             var result;
-            switch(operation) {
+            switch (operation) {
                 case '+':
                     result = num1 + num2;
                     break;
@@ -36,7 +53,7 @@
                     result = num1 * num2;
                     break;
                 case '/':
-                    if(num2 === 0) {
+                    if (num2 === 0) {
                         alert("Cannot divide by zero!");
                         return;
                     }
@@ -48,4 +65,5 @@
         }
     </script>
 </body>
+
 </html>
