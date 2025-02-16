@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="text" id="number1" placeholder="Number 1"><br><br>
+    <input type="text" id="number2" placeholder="Number 2"><br><br>
+
+    <button onclick="calculate('+')">Add</button>
+    <button onclick="calculate('-')">Subtract</button>
+    <button onclick="calculate('*')">Multiply</button>
+    <button onclick="calculate('/')">Divide</button><br><br>
+
+    <input type="text" id="result" placeholder="Result" readonly><br>
+    
+    <script>
+        function calculate(operation) {
+            var num1 = document.getElementById('number1').value;
+            var num2 = document.getElementById('number2').value;
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            var result;
+            switch(operation) {
+                case '+':
+                    result = num1 + num2;
+                    break;
+                case '-':
+                    result = num1 - num2;
+                    break;
+                case '*':
+                    result = num1 * num2;
+                    break;
+                case '/':
+                    if(num2 === 0) {
+                        alert("Cannot divide by zero!");
+                        return;
+                    }
+                    result = num1 / num2;
+                    break;
+            }
+
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
